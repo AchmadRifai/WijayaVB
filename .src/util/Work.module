@@ -1,0 +1,3 @@
+' Gambas module file
+
+Public f As String = User.Home & "/.wijaya/dbs"

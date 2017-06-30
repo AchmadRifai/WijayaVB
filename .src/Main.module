@@ -1,0 +1,14 @@
+' Gambas module file
+
+Public Sub Main()
+  Dim d As Dash
+  Dim c As DBConfig
+  If Not Exist(Work.f, True) Then
+      Print "Config not found"
+      c = New DBConfig
+      c.Visible = True
+    Else
+      d = New Dash
+      d.Visible = True
+  Endif
+End
