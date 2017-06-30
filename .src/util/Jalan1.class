@@ -1,0 +1,25 @@
+' Gambas class file
+
+Inherits Task
+
+Private c As Configurasi
+
+Public Sub New(host As String, nama As String, port As Integer, user As String, pass As String)
+  c = New Configurasi
+  With c
+    .host = host
+    .jalan = port
+    .nama = nama
+    .pengguna = user
+    .sandi = pass
+  End With
+End
+
+
+Public Sub Main()
+  Print "jalan 1"
+End
+
+Public Sub Jalan1_Error()
+  Work.hindar( Error )
+End

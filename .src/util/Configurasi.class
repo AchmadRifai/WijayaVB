@@ -1,0 +1,58 @@
+' Gambas class file
+
+Private hoste, namane, usere, passe As String
+Private porte As Integer
+
+Property host As String
+Private Function host_Read() As String
+  Return hoste
+End
+Private Sub host_Write(Value As String)
+  hoste = Value
+End
+
+Property nama As String
+Private Function nama_Read() As String
+  Return namane
+End
+Private Sub nama_Write(Value As String)
+  namane = Value
+End
+
+Property pengguna As String
+Private Function pengguna_Read() As String
+  Return usere
+End
+Private Sub pengguna_Write(Value As String)
+  usere = Value
+End
+
+Property sandi As String
+Private Function sandi_Read() As String
+  Return passe
+End
+Private Sub sandi_Write(Value As String)
+  passe = Value
+End
+
+Property jalan As Integer
+Private Function jalan_Read() As Integer
+  Return porte
+End
+Private Sub jalan_Write(Value As Integer)
+  porte = Value
+End
+
+Public Function genConnection() As Connection
+  Dim c As Connection = New Connection
+  With c
+    .Type = "mysql"
+    .Name = namane
+    .Host = hoste
+    .Port = CStr(porte)
+    .Login = usere
+    .Password = passe
+  End With
+  c.Open
+  Return c
+End

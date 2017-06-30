@@ -1,6 +1,42 @@
 ' Gambas class file
 
+Private j1 As Jalan1
 
 Public Sub Form_Open()
   Me.Center
+End
+
+Public Sub hoste_KeyPress()
+  validasiSek()
+End
+
+Private Sub validasiSek()
+  s.Enabled = hoste.Text <> "" And namae.Text <> "" And usere.Text <> ""
+End
+
+Public Sub namae_KeyPress()
+  validasiSek
+End
+
+Public Sub usere_KeyPress()
+  validasiSek
+End
+
+Public Sub s_Click()
+  If j1 = Null Then j1 = New Jalan1(hoste.Text, namae.Text, porte.Value, usere.Text, passe.Text) As "Jalan1"
+  disableAll
+End
+
+Private Sub disableAll()
+  s.Enabled = False
+  mouse = Mouse.Wait
+  hoste.Enabled = False
+  namae.Enabled = False
+  porte.Enabled = False
+  usere.Enabled = False
+  passe.Enabled = False
+End
+
+Public Sub j1_Error()
+  Work.hindar
 End

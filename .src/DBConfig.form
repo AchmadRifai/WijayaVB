@@ -1,5 +1,50 @@
 # Gambas Form File 3.0
 
-{ DBConfig Form
-  MoveScaled(0,0,64,64)
+{ Form Form
+  MoveScaled(0,0,48,31)
+  Text = ("Database Configuration")
+  { Label1 Label
+    MoveScaled(1,1,10,4)
+    Text = ("Host")
+  }
+  { Label2 Label
+    MoveScaled(1,5,16,4)
+    Text = ("Database Name")
+  }
+  { Label3 Label
+    MoveScaled(1,9,8,4)
+    Text = ("Port")
+  }
+  { Label4 Label
+    MoveScaled(1,13,9,4)
+    Text = ("User")
+  }
+  { Label5 Label
+    MoveScaled(1,17,11,4)
+    Text = ("Password")
+  }
+  { hoste TextBox
+    MoveScaled(18,1,26,4)
+  }
+  { s Button
+    MoveScaled(1,22,43,4)
+    Enabled = False
+    Text = ("Save And Connect")
+  }
+  { namae TextBox
+    MoveScaled(18,5,26,4)
+  }
+  { porte SpinBox
+    MoveScaled(18,9,26,4)
+    MinValue = 1000
+    MaxValue = 100000
+    Value = 3306
+  }
+  { usere TextBox
+    MoveScaled(18,13,26,4)
+  }
+  { passe TextBox
+    MoveScaled(18,17,26,4)
+    Password = True
+  }
 }

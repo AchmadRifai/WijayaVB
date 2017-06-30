@@ -1,3 +1,6 @@
+[Bookmarks]
+Jalan1=[]
+
 [Breakpoints]
 Count=0
 
@@ -8,12 +11,13 @@ Count=0
 Path="Wijaya.gambas"
 
 [OpenFile]
-Active=1
+Active=5
 File[1]=".src/Main.module:0.14"
-File[2]=".src/util/Work.module:0.3"
+File[2]=".src/util/Work.module:18.8"
 File[3]=".src/DBConfig.form"
-File[4]=".src/DBConfig.class:11.4"
-Count=4
+File[4]=".src/DBConfig.class:16.39"
+Count=5
+File[5]=".src/util/Jalan1.class:17.19"
 
 [Watches]
 Count=0

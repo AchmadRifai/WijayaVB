@@ -1,3 +1,11 @@
 ' Gambas module file
 
 Public f As String = User.Home & "/.wijaya/dbs"
+
+Public Sub saveDBC(host As String, nama As String, port As Integer, user As String, pass As String)
+  Dim j As Jalan1 = New Jalan1(host, nama, port, User, pass) As "Jalan1"
+End
+
+Public Sub hindar()
+  
+End
